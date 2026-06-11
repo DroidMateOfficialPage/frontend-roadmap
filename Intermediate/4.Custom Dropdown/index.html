@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Dropdown</title>
+
+    <meta name="description" content="Modern custom dropdown component with JavaScript">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Custom Dropdown</h1>
+
+        <!-- DROPDOWN -->
+        <div class="dropdown" id="dropdown">
+
+            <!-- TRIGGER -->
+            <button class="dropdown-btn" id="dropdownBtn">
+                <span id="selectedText">Select an option</span>
+                <span class="arrow">▾</span>
+            </button>
+
+            <!-- MENU -->
+            <ul class="dropdown-menu" id="dropdownMenu">
+
+                <li class="option" data-value="react">React</li>
+                <li class="option" data-value="vue">Vue</li>
+                <li class="option" data-value="angular">Angular</li>
+                <li class="option" data-value="svelte">Svelte</li>
+                <li class="option" data-value="solid">SolidJS</li>
+
+            </ul>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
