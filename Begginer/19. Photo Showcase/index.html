@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Showcase</title>
+
+    <meta name="description" content="Modern responsive photo showcase with images, captions and embedded video">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Photo Showcase</h1>
+        <p>Curated visual gallery with modern UI structure</p>
+    </header>
+
+    <!-- GALLERY -->
+    <main class="gallery">
+
+        <!-- CARD 1 -->
+        <figure class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                 alt="Snow mountain landscape"
+                 loading="lazy">
+
+            <figcaption>Mountain Silence</figcaption>
+        </figure>
+
+        <!-- CARD 2 -->
+        <figure class="card">
+            <img src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
+                 alt="Minimal workspace with laptop"
+                 loading="lazy">
+
+            <figcaption>Focus Workspace</figcaption>
+        </figure>
+
+        <!-- CARD 3 -->
+        <figure class="card">
+            <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664"
+                 alt="City skyline at night"
+                 loading="lazy">
+
+            <figcaption>Night City Flow</figcaption>
+        </figure>
+
+        <!-- DECORATIVE IMAGE -->
+        <figure class="card decorative">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                 alt=""
+                 loading="lazy">
+        </figure>
+
+        <!-- CARD 4 -->
+        <figure class="card">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b"
+                 alt="Forest path with sunlight"
+                 loading="lazy">
+
+            <figcaption>Green Escape</figcaption>
+        </figure>
+
+        <!-- CARD 5 -->
+        <figure class="card">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                 alt="Ocean waves on rocks"
+                 loading="lazy">
+
+            <figcaption>Ocean Energy</figcaption>
+        </figure>
+
+        <!-- VIDEO CARD -->
+        <figure class="card video-card">
+
+            <video controls poster="https://images.unsplash.com/photo-1526481280695-3c687fd5432c">
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+
+            <figcaption>Featured Motion Clip</figcaption>
+
+        </figure>
+
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="preview">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
