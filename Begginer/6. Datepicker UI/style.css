@@ -1,0 +1,234 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+
+    --bg: #0f172a;
+    --card: rgba(255,255,255,0.05);
+
+    --border: rgba(255,255,255,0.1);
+
+    --text: #f8fafc;
+    --muted: #94a3b8;
+
+    --accent: #3b82f6;
+}
+
+/* BODY */
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background:
+        radial-gradient(circle at top, #1e3a8a, #0f172a 60%);
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 2rem;
+
+    color: var(--text);
+}
+
+/* WRAPPER */
+
+.wrapper {
+
+    width: 100%;
+
+    max-width: 420px;
+}
+
+/* DATEPICKER CARD */
+
+.datepicker {
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid var(--border);
+
+    border-radius: 24px;
+
+    padding: 1.5rem;
+
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+/* HEADER */
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 1.5rem;
+}
+
+.header h1 {
+
+    font-size: 1.6rem;
+
+    margin-bottom: .3rem;
+}
+
+.header p {
+
+    color: var(--muted);
+
+    font-size: .9rem;
+}
+
+/* MONTH NAV */
+
+.month {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+.month h2 {
+
+    font-size: 1rem;
+}
+
+.month button {
+
+    background: transparent;
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+/* WEEKDAYS */
+
+.weekdays {
+
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    font-size: .75rem;
+
+    color: var(--muted);
+
+    text-align: center;
+
+    margin-bottom: .5rem;
+}
+
+/* DAYS GRID */
+
+.days {
+
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: .4rem;
+}
+
+.days span {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 36px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.days span:hover {
+
+    background: rgba(255,255,255,0.08);
+}
+
+.disabled {
+
+    opacity: .3;
+
+    cursor: default;
+}
+
+.active {
+
+    background: var(--accent);
+
+    color: white;
+
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+.footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+
+.footer button {
+
+    padding: .6rem 1rem;
+
+    border-radius: 10px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.cancel {
+
+    background: transparent;
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+}
+
+.apply {
+
+    background: var(--accent);
+
+    color: white;
+}
