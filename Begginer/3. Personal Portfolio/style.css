@@ -1,0 +1,257 @@
+/* =========================
+   CSS RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --primary: #2563eb;
+    --secondary: #1e293b;
+    --background: #f8fafc;
+    --card: #ffffff;
+    --text: #334155;
+    --border: #e2e8f0;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: white;
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #64748b;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+
+section {
+    flex: 3;
+}
+
+article {
+    background: var(--card);
+    border: 1px solid var(--border);
+
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    border-radius: 12px;
+}
+
+article h3 {
+    margin-bottom: 0.75rem;
+    color: var(--secondary);
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+aside {
+    flex: 1;
+
+    background: white;
+    border: 1px solid var(--border);
+
+    padding: 1.5rem;
+    border-radius: 12px;
+
+    height: fit-content;
+}
+
+aside ul {
+    padding-left: 1rem;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form {
+    background: white;
+    border: 1px solid var(--border);
+
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    border: none;
+    background: var(--primary);
+    color: white;
+
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 2rem;
+    margin-top: 2rem;
+
+    border-top: 1px solid var(--border);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+/* =========================
+   DARK MODE BONUS
+========================= */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --background: #0f172a;
+        --card: #1e293b;
+        --secondary: #f8fafc;
+        --text: #cbd5e1;
+        --border: #334155;
+    }
+
+    header,
+    aside,
+    form {
+        background: var(--card);
+    }
+}
+```
