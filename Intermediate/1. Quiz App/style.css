@@ -1,0 +1,78 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #0b1220;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* APP */
+.app {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* SCREEN SYSTEM */
+.screen {
+    display: none;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* CARD */
+.card {
+    background: #111827;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+}
+
+/* ANSWERS */
+.answers {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #1f2937;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #374151;
+}
+
+/* STATES */
+.correct {
+    background: #16a34a !important;
+}
+
+.wrong {
+    background: #dc2626 !important;
+}
+
+/* TOP BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #94a3b8;
+}
