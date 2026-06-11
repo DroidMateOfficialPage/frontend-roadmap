@@ -182,3 +182,4 @@ https://roadmap.sh/projects/task-tracker-js
 https://roadmap.sh/projects/reddit-client
 https://roadmap.sh/projects/temperature-converter
 https://roadmap.sh/projects/pomodoro-timer
+https://roadmap.sh/projects/theme-switcher

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   DEFAULT THEME
+========================= */
+
+body[data-theme="default"] {
+    --bg: #f5f7ff;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --accent: #6366f1;
+}
+
+/* =========================
+   DARK THEME
+========================= */
+
+body[data-theme="dark"] {
+    --bg: #0b0f19;
+    --surface: #111827;
+    --text: #f1f5f9;
+    --accent: #38bdf8;
+}
+
+/* =========================
+   NEON THEME
+========================= */
+
+body[data-theme="neon"] {
+    --bg: #050816;
+    --surface: #0f172a;
+    --text: #e2e8f0;
+    --accent: #22c55e;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+/* BUTTONS */
+.themes {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.themes button {
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* CARD */
+.card {
+    width: 320px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card button {
+    background: var(--accent);
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
