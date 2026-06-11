@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+        META
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessible Form UI</title>
+
+    <meta name="description" content="Accessible form UI built with HTML and CSS">
+
+    <!-- =========================
+        FONT
+    ========================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+        MAIN WRAPPER
+    ========================== -->
+
+    <main class="container">
+
+        <!-- LEFT: FORM -->
+        <section class="form-card">
+
+            <h1>Create Account</h1>
+
+            <p class="subtitle">
+                Fill in your details to create your account
+            </p>
+
+            <!-- =========================
+                FORM
+            ========================== -->
+
+            <form>
+
+                <!-- FULL NAME -->
+                <div class="field">
+
+                    <label for="fullname">Full Name</label>
+
+                    <input
+                        id="fullname"
+                        name="fullname"
+                        type="text"
+                        aria-required="true"
+                        placeholder="John Doe">
+
+                    <small class="error"> </small>
+
+                </div>
+
+                <!-- EMAIL -->
+                <div class="field">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        aria-required="true"
+                        placeholder="john@example.com">
+
+                    <small class="error"> </small>
+
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="field">
+
+                    <label for="password">Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            id="password"
+                            type="password"
+                            aria-required="true"
+                            placeholder="Enter password">
+
+                        <button type="button" class="toggle">
+                            Show
+                        </button>
+
+                    </div>
+
+                    <small class="error"> </small>
+
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="field">
+
+                    <label for="confirm">Confirm Password</label>
+
+                    <input
+                        id="confirm"
+                        type="password"
+                        aria-required="true"
+                        placeholder="Repeat password">
+
+                    <small class="error"> </small>
+
+                </div>
+
+                <!-- PROGRESS BAR -->
+                <div class="progress">
+
+                    <div class="progress-text">
+                        Form completion
+                    </div>
+
+                    <div class="bar">
+
+                        <div class="fill"></div>
+
+                    </div>
+
+                    <span class="percent">60%</span>
+
+                </div>
+
+                <!-- SUBMIT -->
+                <button class="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- RIGHT: CHECKLIST -->
+        <aside class="checklist">
+
+            <h2>Requirements</h2>
+
+            <ul>
+
+                <li class="done">✔ Full name added</li>
+                <li class="done">✔ Valid email</li>
+                <li>○ Password strength</li>
+                <li>○ Password match</li>
+
+            </ul>
+
+        </aside>
+
+    </main>
+
+</body>
+
+</html>
