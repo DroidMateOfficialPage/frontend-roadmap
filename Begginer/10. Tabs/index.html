@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabs Component</title>
+
+    <meta name="description" content="Tabs component using HTML, CSS and JavaScript">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- TABS WRAPPER -->
+        <section class="tabs">
+
+            <!-- TAB BUTTONS -->
+            <div class="tab-buttons">
+
+                <button class="tab active" data-tab="1">Overview</button>
+
+                <button class="tab" data-tab="2">Features</button>
+
+                <button class="tab" data-tab="3">Pricing</button>
+
+                <button class="tab" data-tab="4">FAQ</button>
+
+            </div>
+
+            <!-- TAB CONTENT -->
+            <div class="tab-content">
+
+                <div class="content active" id="tab-1">
+
+                    <h2>Overview</h2>
+
+                    <p>
+                        This is a modern tabs component built with vanilla JavaScript.
+                    </p>
+
+                </div>
+
+                <div class="content" id="tab-2">
+
+                    <h2>Features</h2>
+
+                    <p>
+                        Fast, lightweight and fully customizable UI component.
+                    </p>
+
+                </div>
+
+                <div class="content" id="tab-3">
+
+                    <h2>Pricing</h2>
+
+                    <p>
+                        Simple pricing structure suitable for SaaS products.
+                    </p>
+
+                </div>
+
+                <div class="content" id="tab-4">
+
+                    <h2>FAQ</h2>
+
+                    <p>
+                        Frequently asked questions and answers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

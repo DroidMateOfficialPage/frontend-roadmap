@@ -1,0 +1,121 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background: #0f172a;
+
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+/* CONTAINER */
+
+.container {
+
+    width: 100%;
+
+    max-width: 700px;
+}
+
+/* TABS CARD */
+
+.tabs {
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 20px;
+
+    padding: 1.5rem;
+
+    backdrop-filter: blur(20px);
+}
+
+/* BUTTONS */
+
+.tab-buttons {
+
+    display: flex;
+
+    gap: .5rem;
+
+    margin-bottom: 1rem;
+}
+
+.tab {
+
+    flex: 1;
+
+    padding: .7rem;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.tab:hover {
+
+    background: rgba(255,255,255,0.05);
+}
+
+.tab.active {
+
+    background: #3b82f6;
+
+    border-color: transparent;
+}
+
+/* CONTENT */
+
+.content {
+
+    display: none;
+
+    animation: fade .3s ease;
+}
+
+.content.active {
+
+    display: block;
+}
+
+.content h2 {
+
+    margin-bottom: .5rem;
+}
+
+/* ANIMATION */
+
+@keyframes fade {
+
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
