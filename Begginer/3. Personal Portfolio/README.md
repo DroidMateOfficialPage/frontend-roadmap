@@ -1,44 +1,46 @@
-# Basic HTML Website
+# Personal Portfolio Website
 
-A simple multi-page website built using only HTML5. This project focuses on semantic structure, navigation, SEO fundamentals, and HTML forms without any CSS or JavaScript.
+A responsive personal portfolio website built with HTML5 and CSS3.
+
+This project expands upon a previously created HTML-only website by introducing modern CSS techniques such as Flexbox, responsive layouts, typography improvements, CSS variables, and dark mode support.
 
 ---
 
 ## 🚀 Project Overview
 
-The purpose of this project is to demonstrate how to create a structured website using semantic HTML elements and multiple interconnected pages.
+The goal of this project is to transform a basic multi-page HTML website into a fully styled personal portfolio while maintaining semantic structure and accessibility.
 
-The website consists of:
+The website includes:
 
-* Home Page
+* Homepage
 * Projects Page
 * Articles Page
 * Contact Page
 
-Each page shares a consistent navigation menu and semantic structure to ensure maintainability and scalability.
+All pages share a consistent design system, responsive navigation, and modern layout structure.
 
 ---
 
-## 📂 Project Structure
+## 📸 Features
 
-```text
-basic-html-website/
-│
-├── index.html
-├── projects.html
-├── articles.html
-├── contact.html
-├── favicon.png
-└── README.md
-```
+### Responsive Design
+
+The website adapts seamlessly across:
+
+* Mobile devices
+* Tablets
+* Laptops
+* Desktop screens
+
+Media queries are used to ensure a smooth user experience on all screen sizes.
 
 ---
 
-## 🧠 Features
+### Semantic HTML5
 
-### Semantic HTML
+The project uses semantic HTML elements to improve accessibility and SEO.
 
-The project uses semantic HTML5 elements:
+Examples include:
 
 * `<header>`
 * `<nav>`
@@ -48,107 +50,190 @@ The project uses semantic HTML5 elements:
 * `<aside>`
 * `<footer>`
 
-This improves accessibility, readability, and SEO.
+---
+
+### Modern CSS
+
+This project demonstrates:
+
+* CSS Variables
+* Flexbox Layouts
+* Responsive Design
+* Box Model
+* Typography Styling
+* Form Styling
+* Hover Effects
 
 ---
 
-### Multi-Page Navigation
+### Google Fonts
 
-A navigation bar is included on every page, allowing users to navigate between:
+The website uses Google Fonts to improve readability and visual consistency.
 
-* Home
-* Projects
-* Articles
-* Contact
+Font used:
+
+* Inter
 
 ---
 
-### SEO Optimization
+### Dark Mode Support
 
-Every page contains:
+Dark mode is automatically enabled for users whose operating system prefers a dark color scheme.
 
-* Title tag
-* Meta description
-* Meta keywords
-* Author metadata
-* Viewport settings
+Implemented using:
 
-These tags help search engines understand page content.
+```css
+@media (prefers-color-scheme: dark)
+```
 
 ---
 
 ### Contact Form
 
-The contact page includes a basic HTML form with:
+The contact page includes a fully styled form containing:
 
 * Name field
 * Email field
-* Message textarea
+* Subject field
+* Message field
 * Submit button
+
+---
+
+## 📂 Project Structure
+
+```text
+personal-portfolio/
+│
+├── index.html
+├── projects.html
+├── articles.html
+├── contact.html
+├── style.css
+├── favicon.png
+└── README.md
+```
+
+---
+
+## 🛠 Technologies Used
+
+* HTML5
+* CSS3
+* Google Fonts
+* Flexbox
+* CSS Variables
+* Media Queries
 
 ---
 
 ## 📖 Pages
 
-### Home Page
+### Home
 
-Introduces the website and provides a brief overview of content.
+Introduces the portfolio and provides navigation to the rest of the website.
 
-### Projects Page
+### Projects
 
-Displays project information and portfolio examples.
+Displays project showcases and development work.
 
-### Articles Page
+### Articles
 
-Contains article previews and educational content.
+Contains educational articles and blog-style content.
 
-### Contact Page
+### Contact
 
-Allows visitors to send messages through a structured form.
+Provides a contact form for visitor communication.
 
 ---
 
 ## 🎯 Learning Objectives
 
-This project helps developers learn:
+By completing this project, the following concepts were practiced:
 
-* HTML page structure
-* Semantic HTML5
-* Website navigation
-* Basic SEO implementation
-* HTML forms
-* Multi-page website architecture
+* Semantic HTML structure
+* Responsive web design
+* CSS Flexbox
+* CSS Variables
+* Typography systems
+* Form design
+* Mobile-first thinking
+* Dark mode implementation
+
+---
+
+## 📱 Responsive Behavior
+
+### Desktop
+
+* Two-column layout
+* Main content area
+* Sidebar section
+
+### Mobile
+
+* Single-column layout
+* Stacked navigation
+* Optimized spacing
+
+Breakpoint:
+
+```css
+@media (max-width: 768px)
+```
 
 ---
 
 ## 🔮 Future Improvements
 
-Possible enhancements include:
+Potential future enhancements include:
 
-* CSS styling
-* Responsive design
+* CSS Grid layouts
+* Animations and transitions
 * JavaScript interactivity
-* Dark mode
-* Blog system
-* Backend form processing
+* Project filtering
+* Blog functionality
+* Downloadable CV
+* Portfolio CMS integration
 
 ---
 
-## 🛠 How to Run
+## 🚀 Deployment
 
-1. Clone the repository
+This project can be deployed using:
+
+* GitHub Pages
+* Cloudflare Pages
+* Netlify
+* Vercel
+
+---
+
+## 🧠 Skills Demonstrated
+
+* Frontend Development
+* Responsive Design
+* Accessibility Principles
+* SEO Fundamentals
+* UI Layout Design
+* CSS Architecture
+
+---
+
+## ▶️ Getting Started
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/basic-html-website.git
+git clone https://github.com/your-username/personal-portfolio.git
 ```
 
-2. Open `index.html` in your browser.
+Open `index.html` in your browser.
 
-No additional setup is required.
+No additional setup or dependencies are required.
 
 ---
 
 ## 📄 License
 
-This project is available for educational and portfolio purposes.
-
+This project is available for educational, portfolio, and learning purposes.
