@@ -1,0 +1,17 @@
+{
+  "name": "14.-age-calculator",
+  "version": "1.0.0",
+  "description": "A modern age calculator built using HTML, CSS, and JavaScript with Luxon and a custom datepicker (Flatpickr).",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "flatpickr": "^4.6.13",
+    "luxon": "^3.7.2"
+  }
+}

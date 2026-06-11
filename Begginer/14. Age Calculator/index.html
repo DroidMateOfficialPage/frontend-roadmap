@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Age Calculator</title>
+
+    <meta name="description" content="Age calculator using Luxon and custom datepicker">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FLATPICKR -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h1>Age Calculator</h1>
+
+            <p>Select your birth date</p>
+
+            <!-- FORM -->
+
+            <form id="form">
+
+                <input
+                    id="birthdate"
+                    type="text"
+                    placeholder="Pick your birthdate"
+                    readonly
+                >
+
+                <button type="submit">Calculate Age</button>
+
+            </form>
+
+            <!-- ERROR -->
+
+            <p class="error" id="error"></p>
+
+            <!-- RESULT -->
+
+            <div class="result" id="result"></div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
