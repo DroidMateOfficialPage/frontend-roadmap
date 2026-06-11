@@ -1,0 +1,143 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background: #0f172a;
+
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+/* CONTAINER */
+
+.container {
+
+    width: 100%;
+
+    max-width: 700px;
+}
+
+/* ACCORDION CARD */
+
+.accordion {
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 20px;
+
+    padding: 2rem;
+
+    backdrop-filter: blur(20px);
+}
+
+h1 {
+
+    margin-bottom: 1.5rem;
+}
+
+/* ITEM */
+
+.item {
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    padding: .5rem 0;
+}
+
+/* QUESTION BUTTON */
+
+.question {
+
+    width: 100%;
+
+    text-align: left;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 1rem;
+
+    padding: .8rem 0;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* ICON EFFECT */
+
+.question::after {
+
+    content: "+";
+
+    color: #3b82f6;
+
+    font-size: 1.2rem;
+
+    transition: .2s;
+}
+
+.question.active::after {
+
+    content: "−";
+}
+
+/* ANSWER */
+
+.answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height .3s ease;
+
+    color: #94a3b8;
+}
+
+.answer p {
+
+    padding: 0 0 1rem 0;
+}
+
+/* OPEN STATE */
+
+.answer.open {
+
+    max-height: 200px;
+}
+
+/* ACTIVE QUESTION */
+
+.question.active {
+
+    color: #3b82f6;
+}

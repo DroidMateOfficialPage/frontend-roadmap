@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accordion Component</title>
+
+    <meta name="description" content="Accordion UI component with HTML, CSS and JavaScript">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="accordion">
+
+            <h1>Frequently Asked Questions</h1>
+
+            <!-- ITEM 1 -->
+            <div class="item">
+
+                <button class="question active">
+                    What is this project about?
+                </button>
+
+                <div class="answer open">
+                    <p>
+                        This project demonstrates how to build an accordion component using HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="item">
+
+                <button class="question">
+                    How does the accordion work?
+                </button>
+
+                <div class="answer">
+                    <p>
+                        Clicking a question toggles its content while closing all other sections.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="item">
+
+                <button class="question">
+                    Can multiple sections be open?
+                </button>
+
+                <div class="answer">
+                    <p>
+                        No — only one section stays open at a time for clean UI experience.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="item">
+
+                <button class="question">
+                    Is this production ready?
+                </button>
+
+                <div class="answer">
+                    <p>
+                        It is a foundation component that can be extended with animations and accessibility improvements.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
