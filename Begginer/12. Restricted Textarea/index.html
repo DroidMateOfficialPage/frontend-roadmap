@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restricted Textarea</title>
+
+    <meta name="description" content="Textarea with live character counter and limit restriction">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h1>Post Composer</h1>
+
+            <p class="subtitle">
+                Write your message (max 200 characters)
+            </p>
+
+            <!-- TEXTAREA WRAPPER -->
+
+            <div class="textarea-wrapper">
+
+                <textarea
+                    id="textarea"
+                    maxlength="200"
+                    placeholder="Start typing..."></textarea>
+
+                <div class="meta">
+
+                    <span id="counter">0</span>
+                    <span>/ 200</span>
+
+                </div>
+
+            </div>
+
+            <!-- WARNING TEXT -->
+
+            <p class="warning" id="warning"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
