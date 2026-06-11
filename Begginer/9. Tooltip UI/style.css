@@ -1,0 +1,128 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background: #0f172a;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+/* NAV */
+
+.nav {
+
+    display: flex;
+
+    gap: 1.5rem;
+
+    padding: 1rem 2rem;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 16px;
+
+    backdrop-filter: blur(20px);
+}
+
+/* NAV ITEM */
+
+.nav-item {
+
+    position: relative;
+
+    font-size: 1.5rem;
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: .6rem;
+
+    border-radius: 12px;
+
+    transition: .2s;
+}
+
+.nav-item:hover {
+
+    background: rgba(255,255,255,0.06);
+}
+
+/* TOOLTIP */
+
+.tooltip {
+
+    position: absolute;
+
+    bottom: 120%;
+
+    left: 50%;
+
+    transform: translateX(-50%) translateY(10px);
+
+    background: #111827;
+
+    color: white;
+
+    font-size: .75rem;
+
+    padding: .4rem .6rem;
+
+    border-radius: 8px;
+
+    white-space: nowrap;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: all .2s ease;
+}
+
+/* TOOLTIP ARROW */
+
+.tooltip::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-width: 6px;
+
+    border-style: solid;
+
+    border-color: #111827 transparent transparent transparent;
+}
+
+/* HOVER EFFECT */
+
+.nav-item:hover .tooltip {
+
+    opacity: 1;
+
+    transform: translateX(-50%) translateY(0);
+}
