@@ -1,0 +1,108 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: radial-gradient(circle at top, #1e293b, #0f172a);
+    color: white;
+    min-height: 100vh;
+    padding: 3rem;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero p {
+    color: #94a3b8;
+    margin-top: .5rem;
+}
+
+/* PRICING GRID */
+.pricing {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 2rem;
+    width: 280px;
+
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* POPULAR CARD */
+.popular {
+    border: 1px solid rgba(59, 130, 246, 0.6);
+    transform: scale(1.05);
+}
+
+/* BADGE */
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #3b82f6;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* PRICE */
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* LIST */
+ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+ul li {
+    padding: .5rem 0;
+    color: #cbd5e1;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    border-radius: 10px;
+    background: #3b82f6;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+}
