@@ -1,14 +1,21 @@
-// UI enhancement only (keeps project clean but modern)
+// =========================
+// SIMPLE UX ENHANCEMENT
+// =========================
 
-// highlight card on click (fake selection UX)
+const table = document.getElementById("pricingTable");
 
-const cards = document.querySelectorAll(".card");
+// Highlight column on hover (UX boost, optional requirement-friendly)
 
-cards.forEach(card => {
-    card.addEventListener("click", () => {
+const cells = table.querySelectorAll("td, th");
 
-        cards.forEach(c => c.classList.remove("active"));
-        card.classList.add("active");
+cells.forEach(cell => {
 
+    cell.addEventListener("mouseenter", () => {
+        cell.style.background = "rgba(59, 130, 246, 0.15)";
     });
+
+    cell.addEventListener("mouseleave", () => {
+        cell.style.background = "";
+    });
+
 });

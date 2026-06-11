@@ -3,12 +3,15 @@
 
 <head>
 
+    <!-- =========================
+        META
+    ========================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pricing Plans</title>
+    <title>Pricing Comparison Table</title>
 
-    <meta name="description" content="Modern pricing cards UI with semantic accessibility structure">
+    <meta name="description" content="Accessible pricing comparison table with semantic HTML structure">
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,74 +19,99 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="hero">
-        <h1>Simple pricing for everyone</h1>
-        <p>Choose a plan that scales with your ambition.</p>
+    <!-- =========================
+        HEADER
+    ========================== -->
+    <header class="page-header">
+        <h1>Choose Your Plan</h1>
+        <p>Simple, transparent pricing for every stage of your journey.</p>
     </header>
 
+    <!-- =========================
+        MAIN
+    ========================== -->
     <main>
 
-        <section class="pricing">
+        <div class="table-wrapper">
 
-            <!-- CARD 1 -->
-            <article class="card">
+            <table id="pricingTable">
 
-                <h2>Starter</h2>
+                <caption>
+                    Subscription plans comparison: Basic, Pro, Enterprise
+                </caption>
 
-                <p class="price">Free</p>
+                <!-- HEAD -->
+                <thead>
+                    <tr>
+                        <th scope="col">Features</th>
+                        <th scope="col">Basic</th>
+                        <th scope="col">Pro</th>
+                        <th scope="col">Enterprise</th>
+                    </tr>
+                </thead>
 
-                <ul>
-                    <li>3 Projects</li>
-                    <li>Basic Support</li>
-                    <li>1 GB Storage</li>
-                </ul>
+                <!-- BODY -->
+                <tbody>
 
-                <button>Select Plan</button>
+                    <!-- GROUP HEADER -->
+                    <tr class="group-row">
+                        <th colspan="4" scope="row">Core Features</th>
+                    </tr>
 
-            </article>
+                    <tr>
+                        <th scope="row">Projects</th>
+                        <td>3</td>
+                        <td>Unlimited</td>
+                        <td>Unlimited</td>
+                    </tr>
 
-            <!-- CARD 2 (POPULAR) -->
-            <article class="card popular">
+                    <tr>
+                        <th scope="row">Storage</th>
+                        <td>1 GB</td>
+                        <td>50 GB</td>
+                        <td>500 GB</td>
+                    </tr>
 
-                <div class="badge">Most Popular</div>
+                    <tr>
+                        <th scope="row">Support</th>
+                        <td>Email</td>
+                        <td>Priority Email</td>
+                        <td>24/7 Dedicated</td>
+                    </tr>
 
-                <h2>Pro</h2>
+                    <!-- GROUP HEADER -->
+                    <tr class="group-row">
+                        <th colspan="4" scope="row">Collaboration & Security</th>
+                    </tr>
 
-                <p class="price">$12<span>/mo</span></p>
+                    <tr>
+                        <th scope="row">Team members</th>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Unlimited</td>
+                    </tr>
 
-                <ul>
-                    <li>Unlimited Projects</li>
-                    <li>Priority Support</li>
-                    <li>50 GB Storage</li>
-                    <li>Team Collaboration</li>
-                </ul>
+                    <tr>
+                        <th scope="row">Security</th>
+                        <td>Basic</td>
+                        <td>Advanced</td>
+                        <td>Enterprise-grade</td>
+                    </tr>
 
-                <button>Get Pro</button>
+                </tbody>
 
-            </article>
+            </table>
 
-            <!-- CARD 3 -->
-            <article class="card">
-
-                <h2>Enterprise</h2>
-
-                <p class="price">$29<span>/mo</span></p>
-
-                <ul>
-                    <li>Unlimited Everything</li>
-                    <li>24/7 Support</li>
-                    <li>500 GB Storage</li>
-                    <li>Advanced Security</li>
-                </ul>
-
-                <button>Contact Sales</button>
-
-            </article>
-
-        </section>
+        </div>
 
     </main>
+
+    <!-- =========================
+        FOOTER
+    ========================== -->
+    <footer class="page-footer">
+        <p>© 2026 Pricing Table UI</p>
+    </footer>
 
     <script src="script.js"></script>
 
