@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <meta name="description" content="Convert between Celsius, Fahrenheit and Kelvin">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header>
+            <h1>Temperature Converter</h1>
+            <p>Fast unit conversion tool</p>
+        </header>
+
+        <!-- INPUT -->
+        <section class="card">
+
+            <input id="tempInput" type="number" placeholder="Enter temperature" />
+
+            <div class="row">
+
+                <select id="fromUnit">
+                    <option value="">From</option>
+                    <option value="c">Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                </select>
+
+                <select id="toUnit">
+                    <option value="">To</option>
+                    <option value="c">Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                </select>
+
+            </div>
+
+            <button id="convertBtn" disabled>Convert</button>
+
+        </section>
+
+        <!-- OUTPUT -->
+        <section class="result" id="result">
+            <h2>Result will appear here</h2>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
