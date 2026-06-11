@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GitHub Random Repo Explorer</title>
+
+    <meta name="description" content="Find random GitHub repositories by programming language">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="bg"></div>
+
+    <main class="app">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>GitHub Repo Explorer</h1>
+            <p>Discover random repositories by language</p>
+        </header>
+
+        <!-- CONTROLS -->
+        <section class="controls">
+
+            <select id="language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="go">Go</option>
+                <option value="c++">C++</option>
+            </select>
+
+            <button id="searchBtn">Generate Repo</button>
+
+            <button id="refreshBtn" class="hidden">Refresh</button>
+
+        </section>
+
+        <!-- STATES -->
+        <section id="state" class="state">
+            <p>Select a language and generate a repository</p>
+        </section>
+
+        <!-- RESULT CARD -->
+        <section id="result" class="card hidden">
+
+            <h2 id="repoName">---</h2>
+
+            <p id="repoDesc">---</p>
+
+            <div class="stats">
+                <span id="stars">⭐ 0</span>
+                <span id="forks">🍴 0</span>
+                <span id="issues">🐞 0</span>
+            </div>
+
+            <a id="repoLink" target="_blank">View on GitHub →</a>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

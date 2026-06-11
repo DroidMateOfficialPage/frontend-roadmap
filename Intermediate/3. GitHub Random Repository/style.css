@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #050816;
+    color: white;
+}
+
+/* BACKGROUND */
+.bg {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, #6366f1, transparent 40%),
+                radial-gradient(circle at 80% 30%, #22c55e, transparent 40%),
+                radial-gradient(circle at 50% 80%, #f97316, transparent 40%);
+    filter: blur(120px);
+    opacity: 0.4;
+}
+
+/* APP */
+.app {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header p {
+    color: #94a3b8;
+}
+
+/* CONTROLS */
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+select, button {
+    padding: 0.7rem;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* STATE */
+.state {
+    margin-top: 2rem;
+    text-align: center;
+    color: #94a3b8;
+}
+
+/* CARD */
+.card {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #cbd5e1;
+}
+
+/* LINKS */
+a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
