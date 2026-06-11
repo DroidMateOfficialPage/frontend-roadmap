@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <meta name="description" content="Ultra modern weather app using Visual Crossing API">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="bg"></div>
+
+    <main class="app">
+
+        <!-- HEADER -->
+        <header class="top">
+            <h1>Weather Intelligence</h1>
+
+            <div class="search">
+                <input id="locationInput" placeholder="Enter city or location..." />
+                <button id="searchBtn">Search</button>
+                <button id="refreshBtn">↻</button>
+            </div>
+        </header>
+
+        <!-- CURRENT WEATHER -->
+        <section class="current">
+
+            <div class="card main">
+                <h2 id="city">—</h2>
+                <p id="condition">Loading...</p>
+
+                <div class="temp">
+                    <span id="temp">--</span>
+                    <span>°C</span>
+                </div>
+
+                <div class="meta">
+                    <p id="wind">Wind: --</p>
+                    <p id="rain">Rain: --</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- HOURLY FORECAST -->
+        <section class="forecast">
+
+            <h3>Next 24 Hours</h3>
+
+            <div id="hours" class="hour-grid"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
