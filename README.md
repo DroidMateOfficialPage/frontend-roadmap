@@ -109,7 +109,7 @@ This repository is built to strengthen:
 ## 🛠 How to Use This Repo
 
 ### 1. Clone the repository
-   git clone https://github.com/DroidMateOfficial/frontend-repo.git
+   git clone https://github.com/DroidMateOfficial/frontend-roadmap.git
    Navigate into any project folder
     cd single-page-cv
 Open index.html in browser
@@ -166,3 +166,4 @@ https://roadmap.sh/projects/cookie-consent
 https://roadmap.sh/projects/restricted-textarea
 https://roadmap.sh/projects/accordion
 https://roadmap.sh/projects/age-calculator
+https://roadmap.sh/projects/flash-cards
