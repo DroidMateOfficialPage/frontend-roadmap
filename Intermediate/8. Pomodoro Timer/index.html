@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pomodoro Focus Timer</title>
+
+    <meta name="description" content="Modern Pomodoro timer for productivity">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="header">
+            <h1>Focus Timer</h1>
+            <p>Work smarter, not longer</p>
+        </header>
+
+        <!-- SESSION TYPE -->
+        <div class="session" id="sessionType">Work Session</div>
+
+        <!-- TIMER -->
+        <div class="timer" id="timer">25:00</div>
+
+        <!-- CONTROLS -->
+        <div class="controls">
+
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="stats">
+            <p>Completed Work Sessions: <span id="count">0</span></p>
+        </div>
+
+        <!-- SETTINGS -->
+        <section class="settings">
+
+            <h3>Settings</h3>
+
+            <label>Work (min)
+                <input type="number" id="workTime" value="25">
+            </label>
+
+            <label>Short Break (min)
+                <input type="number" id="shortBreak" value="5">
+            </label>
+
+            <label>Long Break (min)
+                <input type="number" id="longBreak" value="15">
+            </label>
+
+        </section>
+
+    </main>
+
+    <!-- BEEP -->
+    <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

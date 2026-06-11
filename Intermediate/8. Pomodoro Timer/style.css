@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #050816;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* APP */
+.app {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* HEADER */
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.header p {
+    color: #94a3b8;
+}
+
+/* SESSION */
+.session {
+    font-size: 1.2rem;
+    color: #60a5fa;
+    margin-bottom: 1rem;
+}
+
+/* TIMER */
+.timer {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* BUTTONS */
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+/* STATS */
+.stats {
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+}
+
+/* SETTINGS */
+.settings {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+.settings h3 {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    color: #cbd5e1;
+}
+
+input {
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
