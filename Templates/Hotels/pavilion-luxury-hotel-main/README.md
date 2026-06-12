@@ -124,7 +124,7 @@ Everything here is structured to bridge the gap between technical frontend disci
 
 ---
 
-##📬 Contact
+## 📬 Contact
 
 If you want to collaborate or discuss frontend architecture:
 GitHub: github.com/DroidMateOfficial
