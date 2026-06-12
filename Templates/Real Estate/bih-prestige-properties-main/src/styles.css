@@ -1,0 +1,140 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/400-italic.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-anthracite: var(--anthracite);
+  --color-sand: var(--sand);
+  --color-sand-soft: var(--sand-soft);
+  --color-gold: var(--gold);
+  --color-gold-muted: var(--gold-muted);
+  --color-stone-soft: var(--stone-soft);
+  --color-stone-line: var(--stone-line);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-xl: 6px;
+
+  --shadow-elegant: 0 30px 60px -20px oklch(0.15 0.01 60 / 0.18);
+  --shadow-soft: 0 10px 30px -10px oklch(0.15 0.01 60 / 0.12);
+
+  --tracking-luxury: 0.2em;
+  --tracking-luxury-wide: 0.4em;
+
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.18 0.005 60);
+
+  --anthracite: oklch(0.18 0.005 60);
+  --sand: oklch(0.95 0.012 75);
+  --sand-soft: oklch(0.97 0.008 75);
+  --gold: oklch(0.72 0.09 75);
+  --gold-muted: oklch(0.80 0.06 78);
+  --stone-soft: oklch(0.92 0.005 75);
+  --stone-line: oklch(0.88 0.006 75);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.005 60);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.005 60);
+  --primary: oklch(0.18 0.005 60);
+  --primary-foreground: oklch(0.98 0.005 75);
+  --secondary: oklch(0.95 0.012 75);
+  --secondary-foreground: oklch(0.18 0.005 60);
+  --muted: oklch(0.95 0.012 75);
+  --muted-foreground: oklch(0.50 0.01 60);
+  --accent: oklch(0.72 0.09 75);
+  --accent-foreground: oklch(0.18 0.005 60);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.90 0.006 75);
+  --input: oklch(0.90 0.006 75);
+  --ring: oklch(0.72 0.09 75);
+  --radius: 2px;
+}
+
+.dark {
+  --background: oklch(0.18 0.005 60);
+  --foreground: oklch(0.97 0.008 75);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { -webkit-font-smoothing: antialiased; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; }
+  ::selection { background: var(--gold); color: white; }
+}
+
+@utility eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@utility eyebrow-wide {
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up-mobile {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.animate-fade-up { animation: fade-up 0.9s var(--ease-luxury) both; }
+.animate-fade-in { animation: fade-in 1.2s var(--ease-luxury) both; }
+.animate-slide-up-mobile { animation: slide-up-mobile 0.4s var(--ease-luxury) both; }

@@ -1,0 +1,125 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.25rem;
+
+  /* Deep midnight teal/forest with warm cream + antique gold */
+  --background: oklch(0.18 0.025 180);
+  --foreground: oklch(0.93 0.015 80);
+
+  --card: oklch(0.22 0.028 180);
+  --card-foreground: oklch(0.93 0.015 80);
+
+  --popover: oklch(0.22 0.028 180);
+  --popover-foreground: oklch(0.93 0.015 80);
+
+  --primary: oklch(0.78 0.12 80);  /* antique gold */
+  --primary-foreground: oklch(0.18 0.025 180);
+
+  --secondary: oklch(0.28 0.03 180);
+  --secondary-foreground: oklch(0.93 0.015 80);
+
+  --muted: oklch(0.25 0.025 180);
+  --muted-foreground: oklch(0.70 0.02 80);
+
+  --accent: oklch(0.78 0.12 80);
+  --accent-foreground: oklch(0.18 0.025 180);
+
+  --gold: oklch(0.78 0.12 80);
+  --gold-soft: oklch(0.85 0.08 85);
+
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(0.35 0.02 180 / 60%);
+  --input: oklch(0.30 0.02 180);
+  --ring: oklch(0.78 0.12 80);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+  }
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-gold) 20%, var(--color-gold) 80%, transparent);
+  }
+  .hairline { border-color: oklch(0.78 0.12 80 / 25%); }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up { animation: fade-up 1.2s ease-out both; }
+
+  @keyframes slow-zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+  }
+  .animate-slow-zoom { animation: slow-zoom 20s ease-out forwards; }
+}
